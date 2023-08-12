@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMPARISON OPERATORS</title>
+  </head>
+
+  <body>
+    <h1>COMPARISON OPERATORS</h1>
+
+    <script>
+      let grade = "70";
+      console.log(grade == 70); //sadece deger kiyaslama oncesi conversation olur.String=>number
+      console.log(grade === 70); //hem deger hem tip
+      let a = "dd" + 5 - 2; //NAN
+
+      const sayi1 = 5;
+      console.log(sayi1 > 5); //f
+      console.log(sayi1 > "4"); //degerler farkli ise conversation olur string once numbera doner
+      console.log(sayi1 < "6"); //t
+      console.log(sayi1 < "6a"); //f
+
+      const kelime1 = "Abc'";
+      console.log(kelime1 < "B"); //asciya gore ilk harf
+
+      const z = -1;
+
+      console.log(z < "a");
+
+      // NUMBER VE NUMBER KARSILASTIRMASI
+      console.log(5 > 4);
+      console.log(5 < 4);
+
+      // NUMBER VE STRING KARSILASTIRMASI
+      console.log(5 > "4");
+      console.log(5 < "4");
+      console.log(5 < "apple");
+
+      // STRING VE STRING KARSILASTIRMASI
+      console.log("apple" >= "apple");
+      console.log("apple" < "appke");
+      console.log("apple" > "Apple");
+      //   ikisi number ise normal karşılaştırma
+      //biri number biri string ve stringin içindeki sayı ise karşılaştırma yapılır ama stringin içindeki sayıya çevirilemiyorsa her zaman number büyük olur
+      //ikisi string ise ASCII table'a göre karşılaştırma yapılır
+    </script>
+  </body>
+</html>

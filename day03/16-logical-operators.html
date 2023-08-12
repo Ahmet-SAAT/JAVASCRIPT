@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGICAL OPERATORS</title>
+  </head>
+
+  <body>
+    <h1>LOGICAL OPERATORS</h1>
+
+    <script>
+      const sayi1 = 50;
+      const sayi2 = 40;
+      console.log(sayi1 && sayi2); //sayi2 40
+      //console.log(Boolean(sayi1) && Boolean(sayi2));//en son true degeri sayi2
+      //&& operataru false degeri bulana kadar devam eder.false degeri bulunamazsa en son true olan
+      //degiskenin degerini doner
+
+      const A = 15;
+      const B = 13;
+      console.log(A && B); // 13 ikisi de dogru son true degiskeninin degerini verir
+      console.log(A || B); // 15 true degerini bulmaya calisir.Ilk true verir.
+
+      const C = 15;
+      const D = 0;
+      console.log(C && D); // 0 C true D false ilk false degiskeninin degerini bulup verir.
+      console.log(C || D); // 15 C true D false ilk true degiskeninin degerini bulup verir.
+
+      const E = 0;
+      const F = 1;
+      console.log(E && F); // 0 E false  ilk false degiskeninin degerini bulup verir.
+      console.log(E || F); // 1 E false  F true ilk true degiskeninin degerini bulup verir.
+
+      const G = 0;
+      const I = undefined;
+      console.log(G && I); //G ikisi de false ama  ilk false degiskeninin degerini bulup verir.
+      console.log(G || I); //undefined ikisi de false ve son false degiskeninin degerini bulup verir.
+
+      console.log(!G); //G false tersi True
+
+      let s2 = true;
+      let s3 = true;
+      console.log(s2 && true); //s2 degil diger true son true degeri
+      console.log(s2 && s3); //s3  son true degeri
+      console.log(s2 && s3 && false); //false  false degeri buldu
+      console.log(s2 && s3 && false); //false  false degeri buldu
+      s3 = false;
+      console.log(s2 || s3 || false); //s2  ilk true degeri buldu
+      console.log(s3 || (s2 && s3)); //parantez ici false s2 de false sonuc false
+      s3 = null;
+      console.log(s2 && s3); //null s3 false deger
+      console.log(s2 || s3); //true  s2 degeri
+
+      s2 = "kus";
+      s3 = "kedi";
+      console.log(s2 || s3); //kus
+      console.log(s2 && s3); //kedi
+
+      s2 = true;
+      s3 = false;
+      console.log(!s2); //false
+      console.log(!s3); //true
+
+      not1 = 50;
+      not2 = 60;
+      not3 = 70;
+
+      console.log(not1 > 30 && not1 < 70); //true
+      console.log(not1 > 30 && not1 < 70); //true
+    </script>
+  </body>
+</html>

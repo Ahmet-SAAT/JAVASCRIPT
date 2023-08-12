@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REFERANS-VALUE TYPE</title>
+  </head>
+
+  <body>
+    <script>
+      let score1 = 25;
+      let score2 = score1;
+      score2 = 21;
+      //value type= primitive degerlerde aatama sonrasi degerler bagintisizdir.
+      //score1 21 olmadi 25 olmaya devam eder.Referans type da ise objeler arasinda baglanti olusur/
+
+      let star1 = {
+        color: "red",
+      };
+      let star2 = star1;
+      star2 = {
+        color: "blue",
+      };
+      //star1 color da blue olur
+
+      //primitive
+      let x = 5;
+      let y = x;
+      let z = 5;
+      console.log(z === y); //true
+      console.log(z === x); //true
+
+      let name1 = "ali";
+      let name2 = name1;
+      name2 = "veli";
+      console.log(name1 === name2);
+      false;
+
+      //reference
+      let computer1 = {
+        cpu: "intel", //weewew
+        ram: 16, //56666666
+        disk: 512, //789999
+      };
+      let computer2 = {
+        cpu: "intel", //wefkekwfkewf
+        ram: 16, //58962
+        disk: 512, //78891
+      };
+      let computer3 = computer1; //1 deki deger idleri de ayni oluyor
+      console.log(computer1 === computer2); //false referansda ikisi ayni yerde bulunmaz
+      console.log(computer1 === computer3); //true esit bilgileri icinden aliyor
+      computer3.cpu = "AMD";
+      console.log(computer1);
+      console.log(computer1 === computer3);
+    </script>
+  </body>
+</html>
