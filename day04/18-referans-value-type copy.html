@@ -53,7 +53,17 @@
       console.log(computer1 === computer3); //true esit bilgileri icinden aliyor
       computer3.cpu = "AMD";
       console.log(computer1);
-      console.log(computer1 === computer3);
+      console.log(computer3);
+      console.log(computer1 === computer3); //true artik onlar birbirine bagli
+
+      let bosobje1 = {};
+      let bosobje2 = {};
+      bosobje3 = bosobje1;
+      console.log(bosobje1 === bosobje2); //f
+      console.log(bosobje1 == bosobje2); //f
+      console.log(bosobje1 === bosobje3); //t
+
+      //NOT null da bir objedir ama atama ile esitlemesek de iki null degerine sahip degiskenler birbirine esittir.
     </script>
   </body>
 </html>
