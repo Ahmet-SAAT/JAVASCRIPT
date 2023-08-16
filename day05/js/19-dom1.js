@@ -36,8 +36,3 @@ document.querySelector("ul.menu li:last-child").innerText += ` ${menuItem3Text}`
 document.querySelector("ul.menu li:nth-child(4)").innerText = "<b>Hello World</b>";
 
 document.querySelector("ul.menu li:nth-child(4)").innerHTML = "<b>Hello World</b>";
-
-
-
-
-
