@@ -28,8 +28,8 @@ const user2 = {
 console.log(user);
 console.log(user.age);
 console.log(user.salary.amount);
-console.log(user.adress ? .city.name); //adress var mi dedik hata vermez undefined verir.Optional yaptik
-console.log(user.tax.second ? .f);
+console.log(user.adress ?.city.name); //adress var mi dedik hata vermez undefined verir.Optional yaptik
+console.log(user.tax.second ?.f);
 //console.log(user2.address?.city.name)//hata verir olan seye optional verdin.city yok ne olacak hata
-console.log(user2.address ? .city ? .name) //hata vermez her ihtimali hesapladik 
+console.log(user2.address ?.city ?.name) //hata vermez her ihtimali hesapladik 
 const a = 3;

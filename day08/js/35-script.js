@@ -9,7 +9,7 @@ function alanHesapla() {
     const genislik = genislikEl.value;
     console.log(genislik, yukseklik)
 
-    const result = (yukseklik ? ? 100) * (genislik ? ? 100);
+    const result = (yukseklik ?? 100) * (genislik ?? 100);
     resultEl.innerHTML = `SONUC: ${result}`;
 
 }

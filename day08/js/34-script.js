@@ -1,5 +1,5 @@
 let kullanicMaasi;
-let maas = kullanicMaasi ? ? 3000;
+let maas = kullanicMaasi ?? 3000;
 console.log(maas);
 
 /* const maas2=kullanicMaasi !==null &&
