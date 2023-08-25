@@ -18,7 +18,7 @@ const car = {
 carList.addEventListener("change", (e) => {
   const carKey = e.target.value;
   carValue.innerHTML = car[carKey];
-  //objelerde anahtar ismi ile degerlere ulasmak icin . degil  [] kullanilir.
+  //objelerde key ismi ile olusturulan variable ile degerlere ulasmak icin . degil  [] kullanilir.
 });
 
 const fillCarList = () => {
@@ -42,4 +42,4 @@ const fillCarList = () => {
 fillCarList();
 
 /* const kullaniciInputu="brand"
-car["brand"];//car.brand=>audi */
+car[kullaniciInputu];//car.brand=>audi */
